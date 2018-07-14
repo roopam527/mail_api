@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coming</title>
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+
+  <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+        <h1 class="header__heading animated bounceInDown">RooTap </h1>
+    <header id="header"class="header">
+
+    <h2 class="header__sub-heading animated fadeInLeftBig">Welcome to a new level of social networking </h2>
+   <h2 class="header__sub-heading animated fadeInLeftBig"> Get Ready To Make Your and your business'<span style="text-transform: lowercase">s</span><br/> Online Presence in a new way </h2>
+   
+</header>
+<a href="#message" class="feedback-btn" title="Give Your Feedback"><ion-icon name="chatboxes"></ion-icon></a>
+
+
+<form onsubmit="sendMessage()">
+<section id="message" class="message">
+
+        <a href="#header" class="feedback-btn" title="Give Your Feedback"><ion-icon name="close"></ion-icon></a>
+    <div class="message__box">
+       <h1> Wanna Gives us  <br> a thumps up</h1>
+    <div class="message__inputs">
+    <div class="user-details">
+        <input type="text" id="name" placeholder="Name"/>
+        <input type="email" id="email" placeholder="Email (require)" required/>
+        <input type="text" id="mobile" placeholder="Phone Number"/>
+    </div>
+    <div class="user-message">
+        <textarea id="sendmessage" name="message"   placeholder="Enter Your Message"  cols="40" rows="10"></textarea>
+    </div>
+    <div class="text-center">
+    <input class="submit-btn" type="submit" />
+    </div>
+    </div>
+    </div>
+ 
+</section>
+<footer class="footer animated fadeInLeftBig">Fabricated by an Indian for the Universe .</footer>
+</form>
+    <script src="app.js"></script>
+</body>
+</html>

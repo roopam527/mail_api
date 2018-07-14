@@ -1,0 +1,240 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f80759), to(#bc4e9c));
+  background: linear-gradient(to right, #f80759, #bc4e9c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Wendy One', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.header {
+  background: #DA4453;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(137, 33, 107, 0.9)), to(rgba(218, 68, 83, 0.95))), url("../img/bg.jpg") center center;
+  background: linear-gradient(to right, rgba(137, 33, 107, 0.9), rgba(218, 68, 83, 0.95)), url("../img/bg.jpg") center center;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 54%, 0 100%, 27% 0);
+  clip-path: polygon(0 0, 100% 54%, 0 100%, 27% 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 45%);
+    clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
+  }
+}
+
+.header__heading {
+  font-size: 4rem;
+  position: fixed;
+  top: 6%;
+  left: 40%;
+  z-index: 2;
+  color: #fff;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header__heading {
+    top: 15%;
+    left: 30%;
+  }
+}
+
+.header__sub-heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.feedback-btn {
+  background: #DA4453;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(137, 33, 107, 0.9)), to(rgba(218, 68, 83, 0.95)));
+  background: linear-gradient(to right, rgba(137, 33, 107, 0.9), rgba(218, 68, 83, 0.95));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.2rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.2rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 2rem;
+  right: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+}
+
+.feedback-btn:hover {
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 68, 83, 0.95)), to(rgba(137, 33, 107, 0.9)));
+  background: linear-gradient(to top, rgba(218, 68, 83, 0.95), rgba(137, 33, 107, 0.9));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.message {
+  display: none;
+}
+
+.message:target {
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.message__box {
+  width: 80vw;
+  height: 80vh;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .message__box {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.message__box h1 {
+  background: #DA4453;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(137, 33, 107, 0.9)), to(rgba(218, 68, 83, 0.95)));
+  background: linear-gradient(to right, rgba(137, 33, 107, 0.9), rgba(218, 68, 83, 0.95));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .message__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.user-details {
+  margin: 0 1rem;
+}
+
+.user-details * {
+  display: block;
+  height: 2.5rem;
+  margin-bottom: 0.55rem;
+  padding: 0 1rem;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .user-details * {
+    height: 4rem;
+    margin: 1rem 1rem;
+  }
+}
+
+.user-message {
+  margin: 0 1rem;
+}
+
+.user-message * {
+  padding: 0.5rem;
+  border: none;
+}
+
+.submit-btn {
+  padding: 0.3rem 1rem;
+  background: #DA4453;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(137, 33, 107, 0.9)), to(rgba(218, 68, 83, 0.95)));
+  background: linear-gradient(to right, rgba(137, 33, 107, 0.9), rgba(218, 68, 83, 0.95));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  color: #fff;
+  -webkit-clip-path: polygon(85% 0, 100% 48%, 85% 100%, 0 100%, 0 0);
+  clip-path: polygon(85% 0, 100% 48%, 85% 100%, 0 100%, 0 0);
+}
+
+.text-center {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  top: 90%;
+  right: 10%;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
