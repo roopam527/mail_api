@@ -7,7 +7,7 @@ const sendMessage = (event) =>{
     console.log(document.getElementById("sendmessage").value);
     console.log("hey "+name);
 
-    fetch("https://roopam527.github.io/mail_api/",{
+    fetch("https://rootapi.herokuapp.com/",{
         method:"post",
         headers : {'Content-type' : 'application/json'},
         body:JSON.stringify({
