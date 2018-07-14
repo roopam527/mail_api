@@ -23,7 +23,7 @@
 <a href="#message" class="feedback-btn" title="Give Your Feedback"><ion-icon name="chatboxes"></ion-icon></a>
 
 
-<form onsubmit="sendMessage()">
+<form id="form" onsubmit="event.preventDefault(); sendMessage();">
 <section id="message" class="message">
 
         <a href="#header" class="feedback-btn" title="Give Your Feedback"><ion-icon name="close"></ion-icon></a>
@@ -39,14 +39,15 @@
         <textarea id="sendmessage" name="message"   placeholder="Enter Your Message"  cols="40" rows="10"></textarea>
     </div>
     <div class="text-center">
-    <input class="submit-btn" type="submit" />
+    <button id="submit-btn" class="submit-btn" type="submit">Submit</button>
     </div>
     </div>
     </div>
  
 </section>
-<footer class="footer animated fadeInLeftBig">Fabricated by an Indian for the Universe .</footer>
 </form>
+<footer class="footer animated fadeInLeftBig">Fabricated by an Indian for the Universe .</footer>
+
     <script src="app.js"></script>
 </body>
 </html>
