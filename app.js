@@ -9,8 +9,8 @@ const sendMessage = () =>{
     document.getElementById("email").value="";
     const mobile = document.getElementById("mobile").value;
     document.getElementById("mobile").value=0;
-    const message = document.getElementById("sendMessage").value;
-    document.getElementById("sendMessage").value="";
+    const message = document.getElementById("sendmessage-id").value;
+    document.getElementById("sendmessage-id").value="";
    console.log("hello");
     fetch("https://rootapi.herokuapp.com/",{
         method:"post",
