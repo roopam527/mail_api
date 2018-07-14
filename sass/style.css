@@ -237,6 +237,13 @@ html {
   color: #fff;
 }
 
+.soon {
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  color: #fff;
+}
+
 .copyright {
   position: fixed;
   bottom: 0%;

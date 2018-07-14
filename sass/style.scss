@@ -53,6 +53,8 @@ clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
         text-transform: uppercase;
         color:#fff;
         font-weight: 100;
+      
+    
         letter-spacing: 0.2rem;
         text-align: center;
     }
@@ -175,6 +177,12 @@ clip-path: polygon(85% 0, 100% 48%, 85% 100%, 0 100%, 0 0);
 .footer{
     position: fixed;
     top:90%;
+    right: 10%;
+    color:#fff;
+}
+.soon{
+    position: fixed;
+    bottom:5%;
     right: 10%;
     color:#fff;
 }
